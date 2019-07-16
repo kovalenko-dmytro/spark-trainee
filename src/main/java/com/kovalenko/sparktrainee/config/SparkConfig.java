@@ -15,7 +15,7 @@ public class SparkConfig {
     private String master;
 
     @Bean
-    private SparkConf sparkConf() {
+    SparkConf sparkConf() {
         return new SparkConf().setAppName(appName).setMaster(master);
     }
 
