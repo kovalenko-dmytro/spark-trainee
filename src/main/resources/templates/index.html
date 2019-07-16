@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/layout}">
+
+<head>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Index</title>
+</head>
+
+<body>
+<!-- Page Content -->
+    <div layout:fragment="content" th:remove="tag">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="list-group">
+                        <a th:href="@{/upload}" class="list-group-item list-group-item-action">Get words count from uploaded file</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
